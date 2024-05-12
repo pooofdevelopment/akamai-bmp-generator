@@ -12,16 +12,17 @@ import (
 	"reflect"
 	"strconv"
 
-	bmp212 "xvertile/akamai-bmp/bm/2.1.2"
-	bmp222 "xvertile/akamai-bmp/bm/2.2.2"
-	bmp223 "xvertile/akamai-bmp/bm/2.2.3"
-	bmp310 "xvertile/akamai-bmp/bm/3.1.0"
-	bmp323 "xvertile/akamai-bmp/bm/3.2.3"
-	bmp330 "xvertile/akamai-bmp/bm/3.3.0"
-	bmp331 "xvertile/akamai-bmp/bm/3.3.1"
-	bmp334 "xvertile/akamai-bmp/bm/3.3.4"
-	"xvertile/akamai-bmp/dm"
-	devicemanager "xvertile/akamai-bmp/dm"
+	bmp335 "pooofdevelopment/akamai-bmp-generator/bm/3.3.5"
+	bmp212 "pooofdevelopment/akamai-bmp/bm/2.1.2"
+	bmp222 "pooofdevelopment/akamai-bmp/bm/2.2.2"
+	bmp223 "pooofdevelopment/akamai-bmp/bm/2.2.3"
+	bmp310 "pooofdevelopment/akamai-bmp/bm/3.1.0"
+	bmp323 "pooofdevelopment/akamai-bmp/bm/3.2.3"
+	bmp330 "pooofdevelopment/akamai-bmp/bm/3.3.0"
+	bmp331 "pooofdevelopment/akamai-bmp/bm/3.3.1"
+	bmp334 "pooofdevelopment/akamai-bmp/bm/3.3.4"
+	"pooofdevelopment/akamai-bmp/dm"
+	devicemanager "pooofdevelopment/akamai-bmp/dm"
 )
 
 type AkamaiRequest struct {
@@ -49,6 +50,7 @@ type AkamaiBmpGen interface {
 var deviceManager devicemanager.DeviceManager
 
 var akamaiBmpVersions = map[string]interface{}{
+	"3.3.5": bmp335.NewStable,
 	"3.3.4": bmp334.NewStable,
 	"3.3.1": bmp331.NewStable,
 	"3.3.0": bmp330.NewStable,

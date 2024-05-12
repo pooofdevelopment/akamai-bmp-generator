@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	devicemanager "xvertile/akamai-bmp/dm"
-	"xvertile/akamai-bmp/sdk"
+	devicemanager "pooofdevelopment/akamai-bmp/bm"
+	"pooofdevelopment/akamai-bmp/sdk"
 )
 
 const (
